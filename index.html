@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdillah Dev Works!</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdillah Dev Works!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Abdillah's Development Works!</h1>
-        <p>Here are some of the things I've been working on.</p>
-    </header>
-    <section>
-        <h2>HashiCorp Vault Configuration Terraform Modules</h2>
-        <p>A collection of Terraform modules to simplify the configuration and management of HashiCorp Vault. These modules help automate and streamline the process of setting up and managing Vault infrastructure, secrets engines, and access policies in a reproducible and scalable way.</p>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans">
+  <header class="bg-gray-900 text-white py-10 dark:bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">Abdillah Dev Works!</h1>
+      <p class="mt-4 text-lg">Implementation Services Engineer focused on Infrastructure as Code</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <section class="mb-16 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Featured Projects</h2>
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md inline-block text-left max-w-2xl">
+        <h3 class="text-2xl font-bold">HashiCorp Vault Configuration Terraform Modules</h3>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">
+          A collection of reusable, enterprise-ready Terraform modules for automating the configuration of HashiCorp Vault — from secrets engines to policies and auth methods.
+        </p>
+        <a href="https://github.com/abdillahsarifudin/vault-terraform-modules" class="mt-4 inline-block text-blue-600 underline">View on GitHub</a>
+      </div>
     </section>
+
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">Connect</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="https://github.com/abdillahsarifudin" class="text-blue-600 underline">GitHub</a>
+        <a href="https://linkedin.com/in/abdillahsarifudin" class="text-blue-600 underline">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-100 dark:bg-gray-800 text-center py-4">
+    <p>&copy; 2025 abdillah.dev - Built with ❤️ using GitHub Pages and Tailwind CSS.</p>
+  </footer>
+
+  <script>
+    // Optional: auto toggle dark mode based on system settings
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </body>
 </html>
